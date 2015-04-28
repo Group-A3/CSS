@@ -140,6 +140,55 @@ background-color: #CC0000;
 #wrapper{
 min-height:100%;
 }
+#main h1{
+	text-align:left;
+	margin-left:72px;
+}
+.container {
+	max-width: 500px;
+	text-align: center;
+	position: relative;
+	display:block;
+	margin:auto;
+	margin-top:10px;
+	background-color: transparent;
+}
+.container div {
+	background-color: transparent;
+	display: inline-block;
+	display: none;
+}
+.container div img {
+	width: 500px;
+	height: 500px;
+}
+button.prev, button.next {
+	position: absolute;
+	top: 40%;
+	padding: 2% 2%;
+	z-index: 1;
+	background: #2a2a2a;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 18px;
+	opacity: 0.8;
+	border-style:none;
+}
+
+button.prev:hover, button.next:hover {
+  opacity: 1;
+}
+
+button.prev {
+	left:0;
+	border-radius: 0 8px 8px 0;
+}
+
+button.next {
+	right: 0;
+	border-radius: 8px 0 0 8px;
+}
 /*all the css for the footer, we probably want to change this a lot make it bigger and have more in it*/
 footer{
 margin-top:-50px;
