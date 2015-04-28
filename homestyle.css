@@ -56,6 +56,9 @@ min-width:90px;
 header > nav > ul > li:nth-child(4) > a{
 	width:196px;
 }
+header > nav > ul > li:nth-child(3) > a{
+	padding-right:30px;
+}
 header > nav > ul > li:nth-child(n+2) > a:hover{
 color:#000000;
 text-decoration:none;
