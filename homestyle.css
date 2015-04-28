@@ -104,20 +104,25 @@ border-bottom-right-radius:40px;
 border-bottom-left-radius:2px
 }
 header nav ul li:hover ul{
-top:58px;
-left:0;
+	top:58px;
+	left:0;
 }
 header img{
-height:40px;
-display:block;
-width:auto;
-background-color:transparent;
-display:inline;
-padding-top:8px;
-margin:0;
+	height:40px;
+	display:block;
+	width:auto;
+	background-color:transparent;
+	display:inline;
+	padding-top:8px;
+	margin:0;
 }
-header nav form{
-	
+#cart{
+	margin-top:12px;
+	height:30px;
+}
+header nav > ul > li > form{
+	padding:20px;
+	padding-top:25px;
 }
 /*end of main header stuff*/
 #secondhead{
