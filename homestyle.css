@@ -127,6 +127,15 @@ header nav > ul > li > form{
 	padding:20px;
 	padding-top:25px;
 }
+
+.bl {
+display:block;
+}
+
+input[type="text"], input[type="password"]{
+	width:160px;
+}
+
 /*end of main header stuff*/
 #secondhead{
 margin:0;
