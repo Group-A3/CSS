@@ -123,6 +123,10 @@ header img{
 #cart{
 	margin-top:12px;
 	height:30px;
+	width:30px;
+}
+#cart:hover{
+    -webkit-filter: hue-rotate(35deg);
 }
 header nav > ul > li > form{
 	padding:20px;
@@ -155,7 +159,8 @@ input[type="text"], input[type="password"]{
 	position:fixed;
 	top:0;
 	z-index:1;
-	padding-top:65px;
+	padding:65px 0 0 0;
+	margin:0;
 	font-family:"Arial Black", Gadget, sans-serif;
 }
 /*This wrapper makes the footer stay at the bottom even with no content on the page*/
@@ -163,13 +168,12 @@ input[type="text"], input[type="password"]{
 	min-height:100%;
 	overflow:auto;
 	font-family:Tahoma, Geneva, sans-serif;
-	#display: table;
 }
 #main{
-	padding-top:65px;
+	margin:0 15px 0 0;
+	padding:65px 0 50px 0;
 	overflow:auto;
 	float:right;
-	padding-bottom:50px;
 	min-height:100%;
 }
 #main h1{
@@ -178,6 +182,9 @@ input[type="text"], input[type="password"]{
 }
 table{
 	text-align:center;
+	border-collapse: collapse;
+	margin:0;
+	padding:0;
 }
 table img{
 	width:110px;
@@ -189,6 +196,11 @@ table img:hover{
 table td, table th{
 	width:110px;
 	max-width:110px;
+}
+table tr{
+	border-bottom:solid;
+	border-bottom-width:2px;
+	border-bottom-color:#CC0000;
 }
 button.basket{
 	color:#fff;
