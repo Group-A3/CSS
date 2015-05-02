@@ -1,5 +1,6 @@
 /* All colours are placeholder so go ahead and change them */
-div{/*default background for divs*/
+
+div{
 	
 }
 html, body{/*default background height and margins for html and body,
@@ -113,10 +114,10 @@ header nav ul li:hover ul{
 }
 header img{
 	height:40px;
-	display:block;
+	display:block; /*DISPLAY BLOCK AND INLINE USED HERE*/
+	display:inline;
 	width:auto;
 	background-color:transparent;
-	display:inline;
 	padding-top:8px;
 	margin:0;
 }
@@ -202,6 +203,10 @@ table tr{
 	border-bottom-width:2px;
 	border-bottom-color:#CC0000;
 }
+
+table tbody tr:last-child{ /*so the last item doesn't have a border after it*/
+	border-bottom:none;
+}
 button.basket{
 	color:#fff;
 	font-weight: 600;
@@ -263,6 +268,7 @@ button.next {
 	right: 0;
 	border-radius: 8px 0 0 8px;
 }
+
 /*all the css for the footer, we probably want to change this a lot make it bigger and have more in it*/
 footer{
 	margin-top:-50px;
