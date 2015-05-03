@@ -29,6 +29,9 @@ header nav > ul{
 	list-style:none;
 	padding:2px 0 0 5%;
 }
+header > nav > ul > li > form{
+	margin-left:87px;
+}
 header nav > ul > li{
 	font-family:"Arial Black", Gadget, sans-serif;
 	float:left;
@@ -114,8 +117,7 @@ header nav ul li:hover ul{
 }
 header img{
 	height:40px;
-	display:block; /*DISPLAY BLOCK AND INLINE USED HERE*/
-	display:inline;
+	display:inline-block; /*DISPLAY BLOCK AND INLINE USED HERE-this way is nicer*/
 	width:auto;
 	background-color:transparent;
 	padding-top:8px;
@@ -133,15 +135,24 @@ header nav > ul > li > form{
 	padding:20px;
 	padding-top:25px;
 }
-
-.bl {
-	display:block;
-}
-
 input[type="text"], input[type="password"]{
 	width:160px;
+	z-index: 1;
+	background: #cc0000;
+	color: #000;
+	text-decoration: none;
+	font-weight: 200;
+	font-size: 15px;
+	opacity: 0.8;
+	border-style:none;
+	border-radius:2px;
+	min-height:18px;
 }
-
+.bl {
+	display:block;
+	background-color:#000000 !important;
+	opacity: 0.2 !important;
+}
 /*end of main header stuff*/
 #secondhead{
 	margin:0;
@@ -169,6 +180,21 @@ input[type="text"], input[type="password"]{
 	min-height:100%;
 	overflow:auto;
 	font-family:Tahoma, Geneva, sans-serif;
+}
+#left{
+	float:left;
+	margin:65px 0 50px 80px;
+	text-align:center;
+	min-width:800px;
+}
+#left div{
+	margin:auto;
+}
+#right{
+	float:right;
+	margin:65px 80px 50px 0;
+	min-height:100%;
+	max-width:275px;
 }
 #main{
 	margin:0 15px 0 0;
@@ -221,9 +247,6 @@ button.basket{
 button.basket:hover{
 	opacity: 1;
 }
-.twitter-timeline{
-	float:right;
-}
 .container {
 	max-width: 500px;
 	text-align: center;
@@ -232,12 +255,12 @@ button.basket:hover{
 	margin:auto;
 	margin-top:10px;
 	background-color: transparent;
-	float:left;
 }
 .container div {
 	background-color: transparent;
 	display: inline-block;
 	display: none;
+	margin:auto;
 }
 .container div img {
 	width: 500px;
@@ -268,14 +291,13 @@ button.next {
 	right: 0;
 	border-radius: 8px 0 0 8px;
 }
-
 /*all the css for the footer, we probably want to change this a lot make it bigger and have more in it*/
 footer{
 	margin-top:-50px;
 	clear: both;
 	position: relative;
 	z-index: 10;
-	height: 50px;
+	height: 70px;
 	background-color:#000000;
 	width:100%;
 	padding-top:12px;
