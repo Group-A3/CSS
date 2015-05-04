@@ -13,7 +13,7 @@ DON'T TOUCH THIS, it will break the header and footer*/
 header{/*Styling for the header to make it stay at the top and be max width*/
 	/*Leave these alone*/
 	top:0;
-	position:fixed;
+	position:relative;
 	z-index:100;
 	width:100%;
 	/*use these to change height and colour*/
@@ -27,10 +27,7 @@ feel free to mess around with it*/
 header nav > ul{
 	margin:0;
 	list-style:none;
-	padding:2px 0 0 5%;
-}
-header > nav > ul > li > form{
-	margin-left:87px;
+	padding:2px 80px 0 5%;
 }
 header nav > ul > li{
 	font-family:"Arial Black", Gadget, sans-serif;
@@ -150,6 +147,7 @@ input[type="text"], input[type="password"]{
 }
 .bl {
 	display:block;
+	color:#fff !important;
 	background-color:#000000 !important;
 	opacity: 0.2 !important;
 }
@@ -159,7 +157,8 @@ input[type="text"], input[type="password"]{
 	padding:0;
 	height:70px;
 	width:100%;
-	position:fixed;
+	position:absolute;
+	top:0;
 	background-color: #CC0000;
 	z-index:2;
 }
@@ -167,19 +166,19 @@ input[type="text"], input[type="password"]{
     float: left;
     width: 225px;
     background: #ccc;
-    height:100%;
-	position:fixed;
-	top:0;
-	z-index:1;
-	padding:65px 0 0 0;
+    min-height:100%;
+	padding:0;
 	margin:0;
+	margin-top:-10px;
 	font-family:"Arial Black", Gadget, sans-serif;
+	display: table-cell;
 }
 /*This wrapper makes the footer stay at the bottom even with no content on the page*/
 #wrapper{
 	min-height:100%;
 	overflow:auto;
 	font-family:Tahoma, Geneva, sans-serif;
+	display:inline-table;
 }
 #left{
 	float:left;
@@ -198,10 +197,11 @@ input[type="text"], input[type="password"]{
 }
 #main{
 	margin:0 15px 0 0;
-	padding:65px 0 50px 0;
+	padding:0 0 70px 0;
 	overflow:auto;
 	float:right;
-	min-height:100%;
+	display: table-cell;
+	height:100%;
 }
 #main h1{
 	text-align:left;
@@ -233,7 +233,7 @@ table tr{
 table tbody tr:last-child{ /*so the last item doesn't have a border after it*/
 	border-bottom:none;
 }
-button.basket{
+.basket{
 	color:#fff;
 	font-weight: 600;
 	font-size: 14px;
@@ -244,7 +244,7 @@ button.basket{
 	cursor:pointer;
 	height:40%;
 }
-button.basket:hover{
+.basket:hover{
 	opacity: 1;
 }
 .container {
@@ -291,9 +291,60 @@ button.next {
 	right: 0;
 	border-radius: 8px 0 0 8px;
 }
+.cover{
+	float:left;
+	margin:20px 0 0 80px;
+}
+.cover img{
+	height:300px;
+	width:auto;
+}
+.info{
+	float:right;
+	margin:20px 80px 0 40px;
+}
+.mainbasket{
+	border:solid;
+	border-width:1px;
+	min-width:90%;
+}
+#cart1{
+	display:block;
+	margin:10% 50% 50% 50%;
+	width:100%;
+	text-align:center;
+}
+.othersub{
+	color:#000;
+	font-weight: 400;
+	font-size: 12px;
+	border-style:none;
+	background-color:#fff;
+	border-radius: 4px;
+	opacity: 0.8;
+	cursor:pointer;
+	height:25px;
+}
+.othersub:hover{
+	opacity: 1;
+}
+.othersub1{
+	color:#ccc;
+	font-weight: 400;
+	font-size: 12px;
+	border-style:none;
+	background-color:#000;
+	border-radius: 4px;
+	opacity: 0.2;
+	cursor:pointer;
+	height:25px;
+}
+.othersub1:hover{
+	opacity: 0.4;
+}
 /*all the css for the footer, we probably want to change this a lot make it bigger and have more in it*/
 footer{
-	margin-top:-50px;
+	margin-top:-70px;
 	clear: both;
 	position: relative;
 	z-index: 10;
