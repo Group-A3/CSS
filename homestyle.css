@@ -102,11 +102,11 @@ header nav ul ul li:nth-child(n+1) a:hover{
 }
 header nav ul ul li:last-child a:hover{
 	border-bottom-right-radius:40px;
-	border-bottom-left-radius:2px
+	border-bottom-left-radius:2px;
 }
 header nav ul ul li:last-child a, header nav ul ul li:last-child form{
 	border-bottom-right-radius:40px;
-	border-bottom-left-radius:2px
+	border-bottom-left-radius:2px;
 }
 header nav ul li:hover ul{
 	top:58px;
